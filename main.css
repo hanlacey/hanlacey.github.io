@@ -3,6 +3,11 @@ body {
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.card-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 .product-card {
 	display: flex;
 	flex-direction: column;
@@ -10,6 +15,7 @@ body {
 	align-items: flex-start;
 	width: 300px;
 	border: 1px solid #e2e2e2;
+	margin: 10px;
 }
 
 .product-card img {
@@ -20,15 +26,47 @@ body {
 .product-card #title {
 	color: #333333;
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: bolder;
 	margin-bottom: 10px;
 }
 
 .product-card #description {
 	max-width: 80%;
 	color: #666666;
+	padding-bottom: 10px;
 }
 
 .text-container {
-	padding: 30px;
+	padding: 30px 25px 30px;
+}
+
+.price-and-cart {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+	height: 40px;
+}
+#price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #333333;
+}
+
+#cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #4ed17b;
+	color: white;
+	font-weight: light;
+	height: 40px;
+	width: 50px;
+	border-radius: 5px;
+}
+
+#cart:hover {
+	background-color: #37ac60;
 }
